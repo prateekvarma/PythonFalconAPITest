@@ -11,5 +11,5 @@ class Resource(object):
             ]
         }
         #create json
-        resp.body = json.dump(doc, ensure_ascii=False)
+        resp.body = json.dumps(doc, ensure_ascii=False)
         resp.status = falcon.HTTP_200
